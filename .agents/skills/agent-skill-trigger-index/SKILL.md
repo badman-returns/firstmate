@@ -17,6 +17,8 @@ These skills are not captain-invocable; load them only at their precise triggers
 - `ask-user-authority` - load before deciding any ask-user finding.
 - `validation-supervision` - load when a ship starts or already has an active no-mistakes validation run, including a mid-run requirement change or finding, and before deciding or answering any ask-user finding.
 - `ship-landing` - load when a ship reports a PR or ready branch, when deciding or monitoring landing, and before task cleanup.
+- `task-intake` - load before resolving a request's project, routing work to a secondmate, resolving a ship's delivery mode, yolo posture, branch prefix, or base branch, writing a brief, spawning, steering a worker, or relaying a mid-task ask.
+- `wake-handling` - load before acting on a signal, stale, check, or heartbeat wake, and when any wake reports a merged PR or a Relay-linked milestone.
 - `scout-completion` - load when a scout reports completion, presents a visual artifact for iteration, or is being considered for promotion to implementation.
 - `quota-array-dispatch` - load before choosing among a matched crew-dispatch profile array from current quota-axi default TOON.
 - `harness-adapters` - load before spawning or recovering a crewmate or secondmate, handling a trust dialog, sending a harness-specific skill invocation, interrupting or exiting an agent, resuming an exited agent, or verifying a new harness adapter.
